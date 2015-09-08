@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5F2009E5-751D-473A-83E3-5A47C2CE43FF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>snapchatRibbit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DC98785564BF58B1750DE27D9B1D0EBCC0992BED</key>
+		<string>github.com:vetriselvi/RatChat-iOS-Messaging-App.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>snapchatRibbit.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DC98785564BF58B1750DE27D9B1D0EBCC0992BED</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:vetriselvi/RatChat-iOS-Messaging-App.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DC98785564BF58B1750DE27D9B1D0EBCC0992BED</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DC98785564BF58B1750DE27D9B1D0EBCC0992BED</string>
+			<key>IDESourceControlWCCName</key>
+			<string>RatChat</string>
+		</dict>
+	</array>
+</dict>
+</plist>

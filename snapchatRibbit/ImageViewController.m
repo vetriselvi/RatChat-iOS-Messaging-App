@@ -5,7 +5,6 @@
 //  Created by Vetri Selvi Vairamuthu on 9/6/15.
 //  Copyright (c) 2015 Vetri Selvi Vairamuthu. All rights reserved.
 //
-
 #import "ImageViewController.h"
 
 @interface ImageViewController ()
@@ -14,24 +13,40 @@
 
 @implementation ImageViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+//    imagePickerController.showsCameraControls = NO;
+
+    PFFile *imageFile = [self.message objectForKey:@"file"];
+    NSURL *imageFileUrl = [[NSURL alloc] initWithString:imageFile.url];
+    
+    NSLog(@"imageFileUrl%@",imageFileUrl);
+    if(imageFileUrl){
+    NSData *imageData = [NSData dataWithContentsOfURL:imageFileUrl];
+    self.imageView.image = [UIImage imageWithData:imageData];
+    
+    NSString *senderName = [self.message objectForKey:@"senderName"];
+    NSString *title = [NSString stringWithFormat:@"Sent from %@", senderName];
+    self.navigationItem.title = title;
+    }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if ([self respondsToSelector:@selector(timeout)]) {
+        [NSTimer scheduledTimerWithTimeInterval:10 target:self selector:@selector(timeout) userInfo:nil repeats:NO];
+    }
+    else {
+        NSLog(@"Error: selector missing!");
+    }
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - Helper methods
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)timeout {
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
 
 @end
