@@ -24,7 +24,7 @@
     [super viewDidLoad];
     
      self.title = @"Rat Chat";
-    self.navigationItem.hidesBackButton = YES;
+    //self.navigationItem.hidesBackButton = YES;
 
      self.hidesBottomBarWhenPushed = YES;
 
@@ -35,14 +35,14 @@
     
     [self.view addGestureRecognizer:tap];
 
-    self.navigationItem.title = @"Rat Chat";
+//    self.navigationItem.title = @"Rat Chat";
     //self.navigationItem.hidesBackButton = YES;
   
 }
 -(void) viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-   // [self.navigationItem setHidesBackButton:YES animated:NO];
+   
     self.navigationItem.hidesBackButton = YES;
   //  self.navigationItem.backBarButtonItem.title =@" ";
     self.hidesBottomBarWhenPushed = YES;

@@ -21,7 +21,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  self.title = @" "; //Sets the title in the login vc too!
+  self.title = @"Inbox"; //Sets the title in the login vc too! doubt 1
     [self.navigationItem setHidesBackButton:YES animated:YES];
     self.moviePlayer = [[MPMoviePlayerController alloc] init];
 
@@ -37,7 +37,7 @@
     else{
    
     [self performSegueWithIdentifier:@"ShowLogin" sender:self];
-        [self.navigationItem setHidesBackButton:YES animated:YES];
+        //[self.navigationItem setHidesBackButton:YES animated:YES];
         
        // self.title = @" ";
 

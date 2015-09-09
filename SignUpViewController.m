@@ -29,6 +29,7 @@
     self.hidesBottomBarWhenPushed = YES;
 
     self.navigationItem.title = @"Rat Chat";
+    self.navigationItem.hidesBackButton = NO;
 
     
 }
